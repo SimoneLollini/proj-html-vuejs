@@ -1,10 +1,12 @@
 <script>
 import HeaderTop from './HeaderTop.vue';
+import HeaderNav from './HeaderNav.vue';
 
 export default {
   name: "SiteMain",
   components: {
-    HeaderTop
+    HeaderTop,
+    HeaderNav
   }
 }
 </script>
@@ -13,21 +15,11 @@ export default {
   <header>
     <HeaderTop />
     <!-- /.header_top -->
-
-    <nav>
-      <a href="#">
-        <img src="../assets/images/avada-movers-logo.png" alt="logo">
-      </a>
-    </nav>
+    <HeaderNav />
     <!-- /nav -->
-
   </header>
 </template>
 
 <style lang="scss" scoped>
-nav {
-  img {
-    width: 133px;
-  }
-}
+
 </style>

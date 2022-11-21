@@ -27,10 +27,6 @@ export default {
                 <a href="#">
                     <font-awesome-icon icon="fa-brands fa-youtube" />
                 </a>
-
-
-
-
             </div>
         </div>
     </div>
