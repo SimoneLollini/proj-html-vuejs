@@ -1,14 +1,17 @@
 <script>
+import Jumbotron from './Jumbotron.vue';
+
 export default {
-  name: 'SiteMain'
+  name: 'SiteMain',
+  components: {
+    Jumbotron
+  }
 }
 </script>
 
 <template>
   <main>
-    <section class="jumbotron">
-      jumbo
-    </section>
+    <Jumbotron />
     <!-- /.jumbotron -->
 
     <section class="free_quote">

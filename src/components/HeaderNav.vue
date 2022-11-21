@@ -36,43 +36,54 @@ export default {
 </script>
 
 <template>
-    <div class="container_lg">
-        <nav class="d-flex justify-content-between">
-            <a href="#">
-                <img src="../assets/images/avada-movers-logo.png" alt="logo">
-            </a>
-            <div class="link_wrapper d-flex align-items-center">
-                <NavItem :item="item" v-for="item in this.Items" />
-                <a href="#" class="btn_denim">FREE QUOTE</a>
-            </div>
-            <!-- /.link_wrapper -->
-        </nav>
+    <div class="nav_bar">
+        <div class="container_lg">
+            <nav class="d-flex justify-content-between">
+                <a href="#">
+                    <img src="../assets/images/avada-movers-logo.png" alt="logo">
+                </a>
+                <div class="link_wrapper d-flex align-items-center">
+                    <NavItem :item="item" v-for="item in this.Items" />
+                    <a href="#" class="btn_denim">FREE QUOTE</a>
+                </div>
+                <!-- /.link_wrapper -->
+            </nav>
+        </div>
     </div>
+
+
 </template>
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variable.scss' as *;
 
-nav {
-    padding-top: 14px;
+.nav_bar {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    width: 933px;
+
+    nav {
+        padding-top: 14px;
 
 
-    .btn_denim {
-        background-color: $mv-Denim;
-        color: $mv-White;
-        font-weight: 700;
-        padding: 11px 21px;
-        border-radius: 20px;
-    }
-
-    a {
-        img {
-            width: 133px;
+        .btn_denim {
+            background-color: $mv-Denim;
+            color: $mv-White;
+            font-weight: 700;
+            padding: 11px 21px;
+            border-radius: 20px;
         }
 
-        font-size: 9px;
-    }
+        a {
+            img {
+                width: 133px;
+            }
 
+            font-size: 11px;
+        }
+
+    }
 }
 </style>
 

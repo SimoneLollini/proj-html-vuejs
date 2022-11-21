@@ -21,5 +21,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+header {
+  position: relative;
+}
 </style>

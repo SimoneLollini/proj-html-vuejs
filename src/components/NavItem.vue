@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <a :href="item.href">
+  <a :href="item.href" :class="item.text === 'Home' ? 'active' : ''">
     {{ item.text }}
   </a>
 </template>
@@ -19,5 +19,9 @@ export default {
 a {
   color: $mv-Shark-dark;
   padding-right: 35px;
+}
+
+.active {
+  color: $mv-Lima
 }
 </style>

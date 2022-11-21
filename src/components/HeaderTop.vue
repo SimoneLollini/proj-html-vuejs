@@ -44,19 +44,19 @@ export default {
     color: $mv-White;
 
     a {
-        font-size: 9px;
+        font-size: 11px;
         color: $mv-White;
     }
 
     .phone {
-        font-size: 10px;
+        font-size: 14px;
         display: inline-block;
         padding-left: 10px;
         transform: scale(-1, 1);
     }
 
     .social {
-        font-size: 12px;
+        font-size: 15px;
 
         a {
             padding-left: 14px;
