@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    header {
+        .header_top {
+            background-color: green;
+            height: 33px;
+        }
+
+        nav {
+            background-color: aqua;
+            height: 66px;
+        }
+    }
+
+    main {
+        .jumbotron {
+            background-color: palegreen;
+            height: 567px;
+        }
+
+        .free_quote {
+            background-color: blue;
+            height: 102px;
+        }
+
+        .testimonials_feedback {
+            background-color: palegreen;
+            height: 480px;
+        }
+
+        .offer {
+            background-color: blue;
+            height: 788px;
+        }
+
+        .ease_moves {
+            background-color: palegreen;
+            height: 575px;
+        }
+
+        .testimonials_quotes {
+            background-color: blue;
+            height: 727px;
+        }
+
+        .call_to_action_quote {
+            background-color: palegreen;
+            height: 385px;
+        }
+    }
+
+    footer {
+        .footer_main {
+            background-color: paleturquoise;
+            border-top: 11px solid green;
+            height: 326px;
+        }
+
+        .footer_social {
+            background-color: palegreen;
+            height: 103px;
+        }
+    }
+
+}
+
+.container_lg {
+    max-width: 933px;
+}
