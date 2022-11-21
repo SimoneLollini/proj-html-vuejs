@@ -6,38 +6,38 @@ export default {
 
 <template>
   <main>
-    <div class="jumbotron">
+    <section class="jumbotron">
       jumbo
-    </div>
+    </section>
     <!-- /.jumbotron -->
 
-    <div class="free_quote">
+    <section class="free_quote">
       quote
-    </div>
+    </section>
     <!-- /.free_quote -->
 
-    <div class="testimonials_feedback">
+    <section class="testimonials_feedback">
       testimonials
-    </div>
+    </section>
     <!-- /.testimonials_feedback -->
 
-    <div class="offers">
+    <section class="offers">
       offers
-    </div>
+    </section>
     <!-- /.offers -->
 
-    <div class="ease_moves">
+    <section class="ease_moves">
       ease moves
-    </div>
+    </section>
     <!-- /.ease_moves -->
-    <div class="testimonials_quotes">
+    <section class="testimonials_quotes">
       testimonials
-    </div>
+    </section>
     <!-- /.testimonials_quotes -->
 
-    <div class="call_to_action_quote">
+    <section class="call_to_action_quote">
       call to action quote
-    </div>
+    </section>
     <!-- /.call_to_action_quote -->
   </main>
 </template>
