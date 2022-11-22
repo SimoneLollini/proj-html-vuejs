@@ -3,6 +3,7 @@ import Jumbotron from './Jumbotron.vue';
 import FreeQuote from './FreeQuote.vue';
 import TestimonialsFeedback from './TestimonialsFeedback.vue';
 import OurOffers from './OurOffers.vue';
+import EaseMove from './EaseMove.vue';
 
 export default {
   name: 'SiteMain',
@@ -10,7 +11,8 @@ export default {
     Jumbotron,
     FreeQuote,
     TestimonialsFeedback,
-    OurOffers
+    OurOffers,
+    EaseMove
   }
 }
 </script>
@@ -26,12 +28,11 @@ export default {
     <TestimonialsFeedback />
     <!-- /.testimonials_feedback -->
 
-
+    <!-- TODO rendere dinamico questo componente -->
     <OurOffers />
     <!-- /.offers -->
-    <section class="ease_moves">
-      ease moves
-    </section>
+
+    <EaseMove />
     <!-- /.ease_moves -->
     <section class="testimonials_quotes">
       testimonials
