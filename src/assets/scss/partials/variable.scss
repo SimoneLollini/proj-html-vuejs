@@ -84,3 +84,14 @@ span {
     @include span_upper();
     font-weight: bold;
 }
+
+@mixin hover_scale {
+    &:hover {
+        transition: 700ms;
+        transform: scale(1.04);
+    }
+}
+
+a {
+    @include hover_scale()
+}

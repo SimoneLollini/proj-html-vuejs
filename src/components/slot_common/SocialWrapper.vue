@@ -40,5 +40,6 @@ a {
     font-size: 15px;
     color: $mv-White;
     padding: 0 12px;
+    display: inline-block;
 }
 </style>
