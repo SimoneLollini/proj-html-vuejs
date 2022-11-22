@@ -20,3 +20,22 @@ $mv-River-Bed: #4d596a;
 $mv-Lima-light: #6bbb14;
 $mv-Shark-dark: #29262f;
 $mv-Mantis: #8fce53;
+
+
+//Add
+
+$mv-Dirty-White: #F7FAFB;
+
+@mixin mv-p {
+    font-size: 13px;
+}
+
+@mixin span_upper {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+@mixin title_3 {
+    font-size: 33px;
+    font-weight: bold;
+}

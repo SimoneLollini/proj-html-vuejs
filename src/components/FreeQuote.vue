@@ -7,8 +7,10 @@ export default {
 <template>
 
     <section class="free_quote">
-        <font-awesome-icon icon="fa-solid fa-paper-plane" />
-        <span>get a free quote online now!</span>
+        <a href="#">
+            <font-awesome-icon icon="fa-solid fa-paper-plane" />
+            <span>get a free quote online now!</span>
+        </a>
     </section>
 </template>
 
@@ -19,13 +21,16 @@ export default {
 .free_quote {
     text-align: center;
     padding: 16px 0;
-    text-transform: uppercase;
     background-color: $mv-Denim;
-    font-size: 13px;
-    color: $mv-White;
+
+    a {
+        color: $mv-White;
+    }
+
 
     span {
         padding: 0 9px;
+        @include span_upper
     }
 }
 </style>

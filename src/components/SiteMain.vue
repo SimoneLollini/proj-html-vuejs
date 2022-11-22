@@ -1,12 +1,14 @@
 <script>
 import Jumbotron from './Jumbotron.vue';
 import FreeQuote from './FreeQuote.vue';
+import TestimonialsFeedback from './TestimonialsFeedback.vue';
 
 export default {
   name: 'SiteMain',
   components: {
     Jumbotron,
-    FreeQuote
+    FreeQuote,
+    TestimonialsFeedback
   }
 }
 </script>
@@ -19,10 +21,9 @@ export default {
     <FreeQuote />
     <!-- /.free_quote -->
 
-    <section class="testimonials_feedback">
-      testimonials
-    </section>
+    <TestimonialsFeedback />
     <!-- /.testimonials_feedback -->
+
 
     <section class="offers">
       offers

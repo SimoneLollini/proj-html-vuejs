@@ -1,10 +1,11 @@
 <script>
-import NavItem from './NavItem.vue'
+import NavItem from './NavItem.vue';
+import PrimaryButton from './slot/PrimaryButton.vue';
 
 export default {
     name: 'HeaderNav',
     components: {
-        NavItem,
+        NavItem, PrimaryButton
     },
     data() {
         return {
@@ -44,7 +45,9 @@ export default {
                 </a>
                 <div class="link_wrapper d-flex align-items-center">
                     <NavItem :item="item" v-for="item in this.Items" />
-                    <a href="#" class="btn_denim">FREE QUOTE</a>
+                    <a href="#">
+                        <PrimaryButton>FREE QUOTE</PrimaryButton>
+                    </a>
                 </div>
                 <!-- /.link_wrapper -->
             </nav>
@@ -65,15 +68,6 @@ export default {
 
     nav {
         padding-top: 14px;
-
-
-        .btn_denim {
-            background-color: $mv-Denim;
-            color: $mv-White;
-            font-weight: 700;
-            padding: 11px 21px;
-            border-radius: 20px;
-        }
 
         a {
             img {
