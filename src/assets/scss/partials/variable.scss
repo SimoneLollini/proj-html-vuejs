@@ -47,6 +47,23 @@ $mv-Lima-dark: #5AA511;
     font-weight: bold;
 }
 
+@mixin CallToAction_Quote {
+    padding-top: 117px;
+    padding-bottom: 114px;
+    text-align: center;
+
+    h3 {
+        color: $mv-Lima;
+        padding-top: 18px;
+        padding-bottom: 36px;
+    }
+
+    p {
+        padding-bottom: 32px;
+    }
+
+}
+
 h3 {
     @include title_3()
 }
@@ -57,4 +74,9 @@ h4 {
 
 p {
     @include mv-p()
+}
+
+span {
+    @include span_upper();
+    font-weight: bold;
 }

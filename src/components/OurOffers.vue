@@ -116,8 +116,6 @@ export default {
         span {
             color: $mv-Silver-Chalice;
             @include span_upper;
-            font-weight: bold;
-
         }
 
         h3 {

@@ -5,6 +5,7 @@ import TestimonialsFeedback from './TestimonialsFeedback.vue';
 import OurOffers from './OurOffers.vue';
 import EaseMove from './EaseMove.vue';
 import HappyCustomers from './HappyCustomers.vue';
+import CallToActionQuote from './CallToActionQuote.vue';
 
 export default {
   name: 'SiteMain',
@@ -14,7 +15,8 @@ export default {
     TestimonialsFeedback,
     OurOffers,
     EaseMove,
-    HappyCustomers
+    HappyCustomers,
+    CallToActionQuote
   }
 }
 </script>
@@ -37,14 +39,11 @@ export default {
     <EaseMove />
     <!-- /.ease_moves -->
 
-
     <HappyCustomers />
-    <!-- /.testimonials_quotes -->
-
-    <section class="call_to_action_quote">
-      call to action quote
-    </section>
     <!-- /.happy_customers -->
+
+    <CallToActionQuote />
+
   </main>
 </template>
 
