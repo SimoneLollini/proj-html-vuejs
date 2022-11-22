@@ -17,12 +17,12 @@ import { faTwitter } from '../node_modules/@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '../node_modules/@fortawesome/free-brands-svg-icons'
 import { faPaperPlane } from '../node_modules/@fortawesome/free-solid-svg-icons'
 import { faAngleRight } from '../node_modules/@fortawesome/free-solid-svg-icons'
-
+import { faCopyright } from '../node_modules/@fortawesome/free-regular-svg-icons'
 
 
 
 //  add icons to the library
-library.add(faPhone, faFacebookF, faInstagram, faTwitter, faYoutube, faPaperPlane, faAngleRight)
+library.add(faPhone, faFacebookF, faInstagram, faTwitter, faYoutube, faPaperPlane, faAngleRight, faCopyright)
 
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

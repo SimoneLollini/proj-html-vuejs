@@ -1,6 +1,6 @@
 <script>
 import SingleCol from './SingleCol.vue';
-import PrimaryButton from '../slot/PrimaryButton.vue';
+import PrimaryButton from '../slot_common/PrimaryButton.vue';
 export default {
     name: 'OurOffers',
     components: {

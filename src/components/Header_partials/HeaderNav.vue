@@ -1,6 +1,6 @@
 <script>
 import NavItem from './NavItem.vue';
-import PrimaryButton from '../slot/PrimaryButton.vue';
+import PrimaryButton from '../slot_common/PrimaryButton.vue';
 
 export default {
     name: 'HeaderNav',

@@ -1,6 +1,10 @@
 <script>
+import SocialWrapper from '../slot_common/SocialWrapper.vue';
 export default {
-    name: 'HeaderTop'
+    name: 'HeaderTop',
+    components: {
+        SocialWrapper,
+    }
 }
 </script>
 
@@ -15,18 +19,7 @@ export default {
             </div>
 
             <div class="social">
-                <a href="#">
-                    <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                </a>
-                <a href="#">
-                    <font-awesome-icon icon="fa-brands fa-twitter" />
-                </a>
-                <a href="#">
-                    <font-awesome-icon icon="fa-brands fa-instagram" />
-                </a>
-                <a href="#">
-                    <font-awesome-icon icon="fa-brands fa-youtube" />
-                </a>
+                <SocialWrapper />
             </div>
         </div>
     </div>
@@ -56,7 +49,6 @@ export default {
     }
 
     .social {
-        font-size: 15px;
 
         a {
             padding-left: 14px;

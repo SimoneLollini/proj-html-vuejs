@@ -1,7 +1,7 @@
 <template>
-    <button class="btn_primary">
+    <a class="btn_primary" href="#">
         <slot />
-    </button>
+    </a>
 </template>
   
 <style lang="scss" scoped>
