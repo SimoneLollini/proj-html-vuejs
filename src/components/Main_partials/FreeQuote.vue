@@ -16,7 +16,7 @@ export default {
 
 
 <style lang="scss">
-@use '../assets/scss/partials/variable.scss' as *;
+@use '../../assets/scss/partials/variable.scss' as *;
 
 .free_quote {
     text-align: center;

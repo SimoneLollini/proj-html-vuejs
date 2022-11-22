@@ -1,25 +1,25 @@
 <script>
-import SingleCol from './component_partials/SingleCol.vue';
-import PrimaryButton from './slot/PrimaryButton.vue';
+import SingleCol from './SingleCol.vue';
+import PrimaryButton from '../slot/PrimaryButton.vue';
+
 export default {
-    name: 'OurOffers',
+    name: 'HappyCustomers',
     components: {
-        SingleCol,
-        PrimaryButton
+        PrimaryButton,
+        SingleCol
     },
     data() {
         return {
-            offers: [
+            customers: [
                 {
-                    name: 'Two Man Teams',
-                    image: 'avada-movers-serviceonephoto-final-600x383.jpg',
+                    name: 'nome',
+                    image: 'url',
+                    description: 'descrizione',
                 }, {
-                    name: 'We Do All The Lifting',
-                    image: '',
-                }, {
-                    name: 'Coast To Coast',
-                    image: '',
-                },
+                    name: 'nome',
+                    image: 'url',
+                    description: 'descrizione',
+                }
             ]
         }
     }
@@ -28,22 +28,25 @@ export default {
 </script>
 
 <template>
-    <section class="offers">
+    <section class="customers">
         <div class="titles">
-            <span>we are professional</span>
-            <h3>Full-Service Solution</h3>
+            <span>happy customers</span>
+            <h3>Testimonials</h3>
         </div>
+        <!-- /titles -->
+
         <div class="container_lg">
             <div class="row row-cols-3">
+                <!-- <SingleCol :col="customer" v-for="customer in this.customers" /> -->
 
                 <div class="col">
                     <div class="card_body">
                         <div class="card_top">
-                            <img src="../assets/images/avada-movers-serviceonephoto-final-600x383.jpg" alt="">
+                            <img src="../../assets/images/avada-movers-johndoe-final.jpg" alt="">
                         </div>
 
                         <div class="card_bottom">
-                            <h4>Two Man Teams</h4>
+                            <h4>John Doe</h4>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores molestias, omnis
                                 necessitatibus eaque commodi totam temporibus in consequuntur odio quas, facilis
                                 doloribus odit earum. Nesciunt?
@@ -54,15 +57,14 @@ export default {
                     </div>
 
                 </div>
-
                 <div class="col">
                     <div class="card_body">
                         <div class="card_top">
-                            <img src="../assets/images/avada-movers-servicetwophoto-final-600x383.jpg" alt="">
+                            <img src="../../assets/images/avada-movers-janedoe-final.jpg" alt="">
                         </div>
 
                         <div class="card_bottom">
-                            <h4> We Do All The Lifting </h4>
+                            <h4>Jane Doe</h4>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores molestias, omnis
                                 necessitatibus eaque commodi totam temporibus in consequuntur odio quas, facilis
                                 doloribus odit earum. Nesciunt?
@@ -73,15 +75,14 @@ export default {
                     </div>
 
                 </div>
-
                 <div class="col">
                     <div class="card_body">
                         <div class="card_top">
-                            <img src="../assets/images/avada-movers-servicethreephoto-final-600x383.jpg" alt="">
+                            <img src="../../assets/images/avada-movers-johnsmith-final.jpg" alt="">
                         </div>
 
                         <div class="card_bottom">
-                            <h4> Coast To Coast </h4>
+                            <h4>John Smith</h4>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores molestias, omnis
                                 necessitatibus eaque commodi totam temporibus in consequuntur odio quas, facilis
                                 doloribus odit earum. Nesciunt?
@@ -92,8 +93,6 @@ export default {
                     </div>
 
                 </div>
-
-                <!-- <SingleCol :col="offer" v-for="offer in this.offers" /> -->
 
             </div>
             <!-- /.row -->
@@ -104,10 +103,11 @@ export default {
 
 
 <style lang="scss" scoped>
-@use '../assets/scss/partials/variable.scss' as *;
+@use '../../assets/scss/partials/variable.scss' as *;
 
-.offers {
-    background-color: $mv-White;
+.customers {
+    background-image: url(../../assets/images/avada-movers-testimonial-background.jpg);
+    background-size: cover;
 
     .titles {
         text-align: center;
@@ -116,6 +116,8 @@ export default {
         span {
             color: $mv-Silver-Chalice;
             @include span_upper;
+            font-weight: bold;
+
         }
 
         h3 {
@@ -127,12 +129,16 @@ export default {
 
     .card_body {
         padding: 14px;
-        background-color: $mv-light;
         text-align: center;
 
+        img {
+            width: 108px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            border-radius: 50%;
+        }
 
         .card_bottom {
-            background-color: $mv-White;
             margin-top: 14px;
             padding-bottom: 21px;
 

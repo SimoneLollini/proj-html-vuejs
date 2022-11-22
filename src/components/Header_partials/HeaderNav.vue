@@ -1,6 +1,6 @@
 <script>
 import NavItem from './NavItem.vue';
-import PrimaryButton from './slot/PrimaryButton.vue';
+import PrimaryButton from '../slot/PrimaryButton.vue';
 
 export default {
     name: 'HeaderNav',
@@ -41,7 +41,7 @@ export default {
         <div class="container_lg">
             <nav class="d-flex justify-content-between">
                 <a href="#">
-                    <img src="../assets/images/avada-movers-logo.png" alt="logo">
+                    <img src="../../assets/images/avada-movers-logo.png" alt="logo">
                 </a>
                 <div class="link_wrapper d-flex align-items-center">
                     <NavItem :item="item" v-for="item in this.Items" />
@@ -58,7 +58,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partials/variable.scss' as *;
+@use '../../assets/scss/partials/variable.scss' as *;
 
 .nav_bar {
     position: absolute;

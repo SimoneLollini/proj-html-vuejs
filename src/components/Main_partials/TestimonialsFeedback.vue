@@ -1,8 +1,8 @@
 <script>
-import PrimaryButton from './slot/PrimaryButton.vue';
+import PrimaryButton from '../slot/PrimaryButton.vue';
 
 export default {
-    name: 'CallToActionQuote',
+    name: 'TestimonialsFeedback',
     components: {
         PrimaryButton
     }
@@ -10,10 +10,11 @@ export default {
 </script>
 
 <template>
-    <section class="Call_to_action">
+    <section class="testimonials_feedback">
         <div class="container_sm">
+            <span>headache free</span>
             <h3>
-                Request A Free Quote
+                Award Winning Moving Company
             </h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis nihil et facere maxime tempore,
@@ -29,11 +30,11 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../assets/scss/partials/variable.scss' as *;
+@use '../../assets/scss/partials/variable.scss' as *;
 
-.Call_to_action {
-    background-image: url(../assets/images/avada-movers-request-quote-background.jpg);
-    background-size: cover;
+.testimonials_feedback {
+    background-color: $mv-Dirty-White;
     @include CallToAction_Quote;
+    color: $mv-Silver-Chalice;
 }
 </style>

@@ -14,7 +14,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partials/variable.scss' as *;
+@use '../../assets/scss/partials/variable.scss' as *;
 
 a {
   color: $mv-Shark-dark;

@@ -1,19 +1,22 @@
 <script>
+import FooterMain from './Footer_partials/FooterMain.vue';
+import FooterSocial from './Footer_partials/FooterSocial.vue';
+
 export default {
-  name: 'SiteFooter'
+  name: 'SiteFooter',
+  components: {
+    FooterMain,
+    FooterSocial
+  }
 }
 </script>
 
 <template>
   <footer>
-    <div class="footer_main">
-      footer main
-    </div>
+    <FooterMain />
     <!-- /.footer_main -->
 
-    <div class="footer_social">
-      footer social
-    </div>
+    <FooterSocial />
     <!-- /.footer_social -->
   </footer>
 </template>

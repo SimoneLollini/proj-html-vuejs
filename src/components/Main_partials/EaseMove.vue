@@ -1,5 +1,5 @@
 <script>
-import PrimaryButton from './slot/PrimaryButton.vue';
+import PrimaryButton from '../slot/PrimaryButton.vue';
 export default {
     name: 'EaseMove',
     components: {
@@ -31,13 +31,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partials/variable.scss' as *;
+@use '../../assets/scss/partials/variable.scss' as *;
 
 .ease_move {
     margin-top: 128px;
     margin-bottom: 24px;
     height: 575px;
-    background-image: url(../assets/images/avada-movers-movewithease-background-new.jpg);
+    background-image: url(../../assets/images/avada-movers-movewithease-background-new.jpg);
     background-size: cover;
 
     .wrapper {

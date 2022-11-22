@@ -21,11 +21,12 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partials/variable.scss' as *;
+@use '../../assets/scss/partials/variable.scss' as *;
+
 
 .jumbotron {
     height: 563px;
-    background-image: url(../assets/images/avada-movers-homeherobackground-final.jpg);
+    background-image: url(../../assets/images/avada-movers-homeherobackground-final.jpg);
     background-size: cover;
 
     .wrapper {

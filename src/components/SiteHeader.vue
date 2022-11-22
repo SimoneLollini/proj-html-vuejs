@@ -1,6 +1,6 @@
 <script>
-import HeaderTop from './HeaderTop.vue';
-import HeaderNav from './HeaderNav.vue';
+import HeaderTop from './Header_partials/HeaderTop.vue';
+import HeaderNav from './Header_partials/HeaderNav.vue';
 
 export default {
   name: "SiteMain",

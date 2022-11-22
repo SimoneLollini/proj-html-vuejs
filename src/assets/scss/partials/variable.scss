@@ -32,6 +32,10 @@ $mv-Lima-dark: #5AA511;
     font-size: 13px;
 }
 
+@mixin mv-a {
+    font-size: 12px;
+}
+
 @mixin span_upper {
     text-transform: uppercase;
     font-size: 13px;
