@@ -1,11 +1,11 @@
 <script>
 import NavItem from './NavItem.vue';
 import PrimaryButton from '../slot_common/PrimaryButton.vue';
-
+import LogoMovers from '../slot_common/LogoMovers.vue';
 export default {
     name: 'HeaderNav',
     components: {
-        NavItem, PrimaryButton
+        NavItem, PrimaryButton, LogoMovers
     },
     data() {
         return {
@@ -40,9 +40,7 @@ export default {
     <div class="nav_bar">
         <div class="container_lg">
             <nav class="d-flex justify-content-between">
-                <a href="#">
-                    <img src="../../assets/images/avada-movers-logo.png" alt="logo">
-                </a>
+                <LogoMovers />
                 <div class="link_wrapper d-flex align-items-center">
                     <NavItem :item="item" v-for="item in this.Items" />
                     <a href="#">

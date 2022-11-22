@@ -1,46 +1,56 @@
 <script>
+import LogoMovers from '../slot_common/LogoMovers.vue';
 export default {
-    name: 'FooterMain',
+    name: "FooterMain",
     data() {
         return {
             avadaMovers: [
                 {
-                    text: 'Home',
-                    href: '#'
-                }, {
-                    text: 'Rates',
-                    href: '#'
-                }, {
-                    text: 'Testimonials',
-                    href: '#'
-                }, {
-                    text: 'Blog',
-                    href: '#'
-                }, {
-                    text: 'Free Quote',
-                    href: '#'
+                    text: "Home",
+                    href: "#"
+                },
+                {
+                    text: "Rates",
+                    href: "#"
+                },
+                {
+                    text: "Testimonials",
+                    href: "#"
+                },
+                {
+                    text: "Blog",
+                    href: "#"
+                },
+                {
+                    text: "Free Quote",
+                    href: "#"
                 },
             ],
             recentPosts: [
                 {
-                    text: 'Heading Out To College?',
-                    href: '#'
-                }, {
-                    text: 'Moving Your Business?',
-                    href: '#'
-                }, {
-                    text: 'Outstanding Quality',
-                    href: '#'
-                }, {
-                    text: 'Cost of Moving',
-                    href: '#'
-                }, {
-                    text: 'Best Moving Tips',
-                    href: '#'
+                    text: "Heading Out To College?",
+                    href: "#"
+                },
+                {
+                    text: "Moving Your Business?",
+                    href: "#"
+                },
+                {
+                    text: "Outstanding Quality",
+                    href: "#"
+                },
+                {
+                    text: "Cost of Moving",
+                    href: "#"
+                },
+                {
+                    text: "Best Moving Tips",
+                    href: "#"
                 },
             ]
-        }
-    }
+        };
+    },
+    components: { LogoMovers }
 }
 </script>
 
@@ -56,9 +66,8 @@ export default {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita suscipit debitis ipsam.
                         Quas sit quo at rerum repellendus, iusto veniam reiciendis magni fugit magnam.
                     </p>
-                    <a href="#">
-                        <img src="../../assets/images/avada-movers-logo.png" alt="logo">
-                    </a>
+
+                    <LogoMovers />
 
                 </div>
 
@@ -106,6 +115,7 @@ export default {
 
     .row {
         padding-top: 52px;
+        padding-bottom: 57px;
 
         span {
             display: inline-block;
@@ -115,6 +125,10 @@ export default {
         .col-4 {
             padding-left: 0;
             padding-right: 2rem;
+
+            p {
+                padding-bottom: 55px;
+            }
 
             img {
                 width: 133px;
