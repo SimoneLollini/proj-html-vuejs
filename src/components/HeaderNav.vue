@@ -46,7 +46,7 @@ export default {
                 <div class="link_wrapper d-flex align-items-center">
                     <NavItem :item="item" v-for="item in this.Items" />
                     <a href="#">
-                        <PrimaryButton>FREE QUOTE</PrimaryButton>
+                        <PrimaryButton>free quote</PrimaryButton>
                     </a>
                 </div>
                 <!-- /.link_wrapper -->

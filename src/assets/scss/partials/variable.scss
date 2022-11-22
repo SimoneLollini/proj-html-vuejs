@@ -23,7 +23,7 @@ $mv-Mantis: #8fce53;
 
 
 //Add
-
+$mv-light: #F2F5F8;
 $mv-Dirty-White: #F7FAFB;
 
 @mixin mv-p {
@@ -38,4 +38,21 @@ $mv-Dirty-White: #F7FAFB;
 @mixin title_3 {
     font-size: 33px;
     font-weight: bold;
+}
+
+@mixin title_4 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+h3 {
+    @include title_3()
+}
+
+h4 {
+    @include title_4()
+}
+
+p {
+    @include mv-p()
 }

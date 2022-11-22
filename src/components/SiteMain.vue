@@ -2,13 +2,15 @@
 import Jumbotron from './Jumbotron.vue';
 import FreeQuote from './FreeQuote.vue';
 import TestimonialsFeedback from './TestimonialsFeedback.vue';
+import OurOffers from './OurOffers.vue';
 
 export default {
   name: 'SiteMain',
   components: {
     Jumbotron,
     FreeQuote,
-    TestimonialsFeedback
+    TestimonialsFeedback,
+    OurOffers
   }
 }
 </script>
@@ -25,11 +27,8 @@ export default {
     <!-- /.testimonials_feedback -->
 
 
-    <section class="offers">
-      offers
-    </section>
+    <OurOffers />
     <!-- /.offers -->
-
     <section class="ease_moves">
       ease moves
     </section>

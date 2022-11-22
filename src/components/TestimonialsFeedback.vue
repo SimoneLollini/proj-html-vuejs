@@ -45,7 +45,6 @@ export default {
     }
 
     h3 {
-        @include title_3;
         color: $mv-Lima;
         padding-top: 18px;
         padding-bottom: 36px;
