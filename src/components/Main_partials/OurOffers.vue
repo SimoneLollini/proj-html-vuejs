@@ -1,6 +1,8 @@
 <script>
 import SingleCol from './SingleCol.vue';
 import PrimaryButton from '../slot_common/PrimaryButton.vue';
+const imgPath = new URL("../../assets/images/avada-movers-janedoe-final.jpg", import.meta.url).href;
+
 export default {
     name: 'OurOffers',
     components: {

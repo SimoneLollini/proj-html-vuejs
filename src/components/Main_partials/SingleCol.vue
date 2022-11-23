@@ -1,5 +1,6 @@
 <script>
 import PrimaryButton from '../slot_common/PrimaryButton.vue';
+
 export default {
     name: 'SingleCol',
     components: {
@@ -7,15 +8,9 @@ export default {
     },
     props: {
         col: Object
-    }, methods: {
-        getImageUrl(name) {
-            console.log('img');
-            console.log(name);
-            return new URL(`./dir/${name}.jpg`, import.meta.url).href
-        }
-
     }
 }
+
 </script>
 
 
@@ -24,6 +19,7 @@ export default {
         <div class="card_body">
             <div class="card_top">
                 <img :src="getImageUrl(col.image)" alt="">
+                <!-- <img src="" alt=""> -->
             </div>
             <!-- /.card_top -->
             <div class="card_bottom">
