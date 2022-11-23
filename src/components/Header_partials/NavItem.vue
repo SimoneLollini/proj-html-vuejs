@@ -7,6 +7,8 @@ export default {
 }
 </script>
 
+
+
 <template>
   <a :href="item.href" :class="item.text === 'Home' ? 'active' : ''">
     {{ item.text }}

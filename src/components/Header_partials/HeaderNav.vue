@@ -2,6 +2,8 @@
 import NavItem from './NavItem.vue';
 import PrimaryButton from '../slot_common/PrimaryButton.vue';
 import LogoMovers from '../slot_common/LogoMovers.vue';
+import { store } from '../../data/store.js';
+
 export default {
     name: 'HeaderNav',
     components: {
@@ -9,27 +11,7 @@ export default {
     },
     data() {
         return {
-            Items: [
-                {
-                    href: '#',
-                    text: 'Home'
-                }, {
-                    href: '#',
-                    text: 'Rates'
-                }, {
-                    href: '#',
-                    text: 'Testimonials'
-                }, {
-                    href: '#',
-                    text: 'FAQ'
-                }, {
-                    href: '#',
-                    text: 'Blog'
-                }, {
-                    href: '#',
-                    text: 'Contact'
-                },
-            ]
+            store
         }
     }
 }
@@ -42,7 +24,7 @@ export default {
             <nav class="d-flex justify-content-between">
                 <LogoMovers />
                 <div class="link_wrapper d-flex align-items-center">
-                    <NavItem :item="item" v-for="item in this.Items" />
+                    <NavItem :item="item" v-for="item in store.navBar" />
                     <a href="#">
                         <PrimaryButton>free quote</PrimaryButton>
                     </a>

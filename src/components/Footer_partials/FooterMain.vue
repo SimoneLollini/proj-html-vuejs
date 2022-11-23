@@ -1,53 +1,12 @@
 <script>
 import LogoMovers from '../slot_common/LogoMovers.vue';
+import { store } from "../../data/store.js";
+
 export default {
     name: "FooterMain",
     data() {
         return {
-            avadaMovers: [
-                {
-                    text: "Home",
-                    href: "#"
-                },
-                {
-                    text: "Rates",
-                    href: "#"
-                },
-                {
-                    text: "Testimonials",
-                    href: "#"
-                },
-                {
-                    text: "Blog",
-                    href: "#"
-                },
-                {
-                    text: "Free Quote",
-                    href: "#"
-                },
-            ],
-            recentPosts: [
-                {
-                    text: "Heading Out To College?",
-                    href: "#"
-                },
-                {
-                    text: "Moving Your Business?",
-                    href: "#"
-                },
-                {
-                    text: "Outstanding Quality",
-                    href: "#"
-                },
-                {
-                    text: "Cost of Moving",
-                    href: "#"
-                },
-                {
-                    text: "Best Moving Tips",
-                    href: "#"
-                },
-            ]
+            store
         };
     },
     components: { LogoMovers }
@@ -75,7 +34,7 @@ export default {
                     <span>
                         About
                     </span>
-                    <div v-for="link in this.avadaMovers">
+                    <div v-for="link in store.footerHrefAbout">
 
                         <a :href="link.href">
                             <font-awesome-icon icon="fa-solid fa-angle-right" /> {{ link.text }}
@@ -87,7 +46,7 @@ export default {
                         Recent Posts
 
                     </span>
-                    <div v-for="link in this.recentPosts">
+                    <div v-for="link in store.footerHrefPosts">
 
                         <a :href="link.href">
                             <font-awesome-icon icon="fa-solid fa-angle-right" /> {{ link.text }}

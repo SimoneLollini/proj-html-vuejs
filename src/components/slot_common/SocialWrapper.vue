@@ -1,34 +1,17 @@
 <script>
+import { store } from "../../data/store.js";
 export default {
     name: 'SocialWrapper',
     data() {
         return {
-            socials: [{
-                name: 'FaceBook',
-                icon: 'fa-brands fa-facebook-f',
-                href: '#'
-            },
-            {
-                name: 'FaceBook',
-                icon: 'fa-brands fa-twitter',
-                href: '#'
-            }, {
-                name: 'FaceBook',
-                icon: 'fa-brands fa-instagram',
-                href: '#'
-            }, {
-                name: 'FaceBook',
-                icon: 'fa-brands fa-youtube',
-                href: '#'
-            },
-            ]
+            store
         }
     }
 }
 </script>
 <!-- <font-awesome-icon icon="fa-brands fa-facebook-f" /> -->
 <template>
-    <a :href="social.href" v-for="social in this.socials">
+    <a :href="social.href" v-for="social in store.socials">
         <font-awesome-icon :icon="social.icon" />
     </a>
 </template>

@@ -33,7 +33,6 @@ export default {
     padding-top: 11px;
     padding-bottom: 12px;
     border-bottom: 1px solid $mv-Lima-light;
-    font-size: 9px;
     color: $mv-White;
 
     a {
@@ -43,13 +42,12 @@ export default {
 
     .phone {
         font-size: 14px;
-        display: inline-block;
         padding-left: 10px;
+        display: inline-block;
         transform: scale(-1, 1);
     }
 
     .social {
-
         a {
             padding-left: 14px;
         }
