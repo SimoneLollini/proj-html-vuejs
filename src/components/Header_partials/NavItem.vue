@@ -2,7 +2,8 @@
 export default {
   name: 'NavItem',
   props: {
-    item: Object
+    item: Object,
+    index: Number,
   }
 }
 </script>
@@ -10,7 +11,7 @@ export default {
 
 
 <template>
-  <a :href="item.href" :class="item.text === 'Home' ? 'active' : ''">
+  <a :href="item.href" :class="index === 0 ? 'active' : ''">
     {{ item.text }}
   </a>
 </template>

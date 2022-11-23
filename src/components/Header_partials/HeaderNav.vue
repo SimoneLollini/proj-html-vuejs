@@ -24,7 +24,8 @@ export default {
             <nav class="d-flex justify-content-between">
                 <LogoMovers />
                 <div class="link_wrapper d-flex align-items-center">
-                    <NavItem :item="item" v-for="item in store.navBar" />
+                    <NavItem :item="item" :index="index" v-for="(item, index) in store.navBar" />
+                    <!-- /.NavItem -->
                     <PrimaryButton>free quote</PrimaryButton>
                 </div>
                 <!-- /.link_wrapper -->

@@ -12,8 +12,8 @@ export default {
 <template>
     <div class="footer_social">
         <div class="copyright">
-            <font-awesome-icon icon="fa-regular fa-copyright" /> Copyright 2012 - 2020 | Avada Theme by ThemeFusion |
-            All Rights Reserved | Powered by Simone
+            <font-awesome-icon icon="fa-regular fa-copyright" />
+            Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by Simone
         </div>
         <SocialWrapper />
     </div>
