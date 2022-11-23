@@ -34,7 +34,7 @@ export default {
                     <span>
                         About
                     </span>
-                    <div v-for="link in store.footerHrefAbout">
+                    <div v-for="link in store.HrefAbout">
 
                         <a :href="link.href">
                             <font-awesome-icon icon="fa-solid fa-angle-right" /> {{ link.text }}
@@ -46,7 +46,7 @@ export default {
                         Recent Posts
 
                     </span>
-                    <div v-for="link in store.footerHrefPosts">
+                    <div v-for="link in store.HrefPosts">
 
                         <a :href="link.href">
                             <font-awesome-icon icon="fa-solid fa-angle-right" /> {{ link.text }}

@@ -44,7 +44,7 @@ export const store = reactive({
       href: '#'
     },
   ],
-  footerHrefAbout: [
+  HrefAbout: [
     {
       text: "Home",
       href: "#"
@@ -66,7 +66,7 @@ export const store = reactive({
       href: "#"
     },
   ],
-  footerHrefPosts: [
+  HrefPosts: [
     {
       text: "Heading Out To College?",
       href: "#"
