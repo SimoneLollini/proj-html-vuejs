@@ -37,7 +37,7 @@ export default {
     margin-top: 128px;
     margin-bottom: 24px;
     height: 575px;
-    background-image: url(../../assets/images/avada-movers-movewithease-background-new.jpg);
+    background-image: url(/images/avada-movers-movewithease-background-new.jpg);
     background-size: cover;
 
     .wrapper {

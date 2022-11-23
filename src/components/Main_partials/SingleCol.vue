@@ -18,7 +18,7 @@ export default {
     <div class="col">
         <div class="card_body">
             <div class="card_top">
-                <img :src="getImageUrl(col.image)" alt="">
+                <img :src="col.image" alt="">
                 <!-- <img src="" alt=""> -->
             </div>
             <!-- /.card_top -->

@@ -12,13 +12,14 @@ export default {
         return {
             customers: [
                 {
-                    name: 'nome',
-                    image: 'url',
-                    description: 'descrizione',
+                    name: 'John Doe',
+                    image: '/images/avada-movers-johndoe-final.jpg',
                 }, {
-                    name: 'nome',
-                    image: 'url',
-                    description: 'descrizione',
+                    name: 'Jane Doe',
+                    image: '/images/avada-movers-janedoe-final.jpg',
+                }, {
+                    name: 'John Smith',
+                    image: '/images/avada-movers-johnsmith-final.jpg',
                 }
             ]
         }
@@ -39,60 +40,7 @@ export default {
             <div class="row row-cols-3">
                 <!-- <SingleCol :col="customer" v-for="customer in this.customers" /> -->
 
-                <div class="col">
-                    <div class="card_body">
-                        <div class="card_top">
-                            <img src="../../assets/images/avada-movers-johndoe-final.jpg" alt="">
-                        </div>
-
-                        <div class="card_bottom">
-                            <h4>John Doe</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores molestias, omnis
-                                necessitatibus eaque commodi totam temporibus in consequuntur odio quas, facilis
-                                doloribus odit earum. Nesciunt?
-                            </p>
-                            <PrimaryButton>Read more</PrimaryButton>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="card_body">
-                        <div class="card_top">
-                            <img src="../../assets/images/avada-movers-janedoe-final.jpg" alt="">
-                        </div>
-
-                        <div class="card_bottom">
-                            <h4>Jane Doe</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores molestias, omnis
-                                necessitatibus eaque commodi totam temporibus in consequuntur odio quas, facilis
-                                doloribus odit earum. Nesciunt?
-                            </p>
-                            <PrimaryButton>Read more</PrimaryButton>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="card_body">
-                        <div class="card_top">
-                            <img src="../../assets/images/avada-movers-johnsmith-final.jpg" alt="">
-                        </div>
-
-                        <div class="card_bottom">
-                            <h4>John Smith</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores molestias, omnis
-                                necessitatibus eaque commodi totam temporibus in consequuntur odio quas, facilis
-                                doloribus odit earum. Nesciunt?
-                            </p>
-                            <PrimaryButton>Read more</PrimaryButton>
-                        </div>
-
-                    </div>
-
-                </div>
+                <SingleCol :col="customer" v-for="customer in this.customers" />
 
             </div>
             <!-- /.row -->
@@ -102,11 +50,11 @@ export default {
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use '../../assets/scss/partials/variable.scss' as *;
 
 .customers {
-    background-image: url(../../assets/images/avada-movers-testimonial-background.jpg);
+    background-image: url(/images/avada-movers-testimonial-background.jpg);
     background-size: cover;
 
     .titles {

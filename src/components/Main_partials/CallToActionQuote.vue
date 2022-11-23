@@ -32,7 +32,7 @@ export default {
 @use '../../assets/scss/partials/variable.scss' as *;
 
 .Call_to_action {
-    background-image: url(../../assets/images/avada-movers-request-quote-background.jpg);
+    background-image: url(/images/avada-movers-request-quote-background.jpg);
     background-size: cover;
     @include CallToAction_Quote;
 }

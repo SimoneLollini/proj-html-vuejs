@@ -14,13 +14,13 @@ export default {
             offers: [
                 {
                     name: 'Two Man Teams',
-                    image: 'avada-movers-serviceonephoto-final-600x383.jpg',
+                    image: '/images/avada-movers-serviceonephoto-final-600x383.jpg',
                 }, {
                     name: 'We Do All The Lifting',
-                    image: '',
+                    image: '/images/avada-movers-servicetwophoto-final-600x383.jpg',
                 }, {
                     name: 'Coast To Coast',
-                    image: '',
+                    image: '/images/avada-movers-servicethreephoto-final-600x383.jpg',
                 },
             ]
         }
@@ -38,64 +38,7 @@ export default {
         <div class="container_lg">
             <div class="row row-cols-3">
 
-                <div class="col">
-                    <div class="card_body">
-                        <div class="card_top">
-                            <img src="../../assets/images/avada-movers-serviceonephoto-final-600x383.jpg" alt="">
-                        </div>
-
-                        <div class="card_bottom">
-                            <h4>Two Man Teams</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores molestias, omnis
-                                necessitatibus eaque commodi totam temporibus in consequuntur odio quas, facilis
-                                doloribus odit earum. Nesciunt?
-                            </p>
-                            <PrimaryButton>Read more</PrimaryButton>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col">
-                    <div class="card_body">
-                        <div class="card_top">
-                            <img src="../../assets/images/avada-movers-servicetwophoto-final-600x383.jpg" alt="">
-                        </div>
-
-                        <div class="card_bottom">
-                            <h4> We Do All The Lifting </h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores molestias, omnis
-                                necessitatibus eaque commodi totam temporibus in consequuntur odio quas, facilis
-                                doloribus odit earum. Nesciunt?
-                            </p>
-                            <PrimaryButton>Read more</PrimaryButton>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col">
-                    <div class="card_body">
-                        <div class="card_top">
-                            <img src="../../assets/images/avada-movers-servicethreephoto-final-600x383.jpg" alt="">
-                        </div>
-
-                        <div class="card_bottom">
-                            <h4> Coast To Coast </h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores molestias, omnis
-                                necessitatibus eaque commodi totam temporibus in consequuntur odio quas, facilis
-                                doloribus odit earum. Nesciunt?
-                            </p>
-                            <PrimaryButton>Read more</PrimaryButton>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- <SingleCol :col="offer" v-for="offer in this.offers" /> -->
+                <SingleCol :col="offer" v-for="offer in this.offers" />
 
             </div>
             <!-- /.row -->
@@ -105,7 +48,7 @@ export default {
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use '../../assets/scss/partials/variable.scss' as *;
 
 .offers {
@@ -126,6 +69,7 @@ export default {
             padding-top: 25px;
         }
     }
+
 
     .card_body {
         padding: 14px;

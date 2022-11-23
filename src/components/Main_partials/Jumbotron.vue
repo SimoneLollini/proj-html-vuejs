@@ -26,7 +26,7 @@ export default {
 
 .jumbotron {
     height: 563px;
-    background-image: url(../../assets/images/avada-movers-homeherobackground-final.jpg);
+    background-image: url(/images/avada-movers-homeherobackground-final.jpg);
     background-size: cover;
 
     .wrapper {
