@@ -29,10 +29,10 @@ export default {
 @use '../../assets/scss/partials/variable.scss' as *;
 
 .header_top {
-    background-color: $mv-Lima;
+    background-color: $mv-Success;
     padding-top: 11px;
     padding-bottom: 12px;
-    border-bottom: 1px solid $mv-Lima-light;
+    border-bottom: 1px solid $mv-Success-lighter;
     color: $mv-White;
 
     a {

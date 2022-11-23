@@ -8,7 +8,7 @@
 @use '../../assets/scss/partials/variable.scss' as *;
 
 .btn_primary {
-    background-color: $mv-Denim;
+    background-color: $mv-Secondary;
     color: $mv-White;
     text-transform: uppercase;
     font-weight: 700;

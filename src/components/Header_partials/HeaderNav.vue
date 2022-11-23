@@ -25,9 +25,7 @@ export default {
                 <LogoMovers />
                 <div class="link_wrapper d-flex align-items-center">
                     <NavItem :item="item" v-for="item in store.navBar" />
-                    <a href="#">
-                        <PrimaryButton>free quote</PrimaryButton>
-                    </a>
+                    <PrimaryButton>free quote</PrimaryButton>
                 </div>
                 <!-- /.link_wrapper -->
             </nav>

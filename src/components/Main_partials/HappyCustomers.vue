@@ -114,14 +114,14 @@ export default {
         padding-top: 131px;
 
         span {
-            color: $mv-Silver-Chalice;
+            color: $mv-Silver;
             @include span_upper;
             font-weight: bold;
 
         }
 
         h3 {
-            color: $mv-Lima;
+            color: $mv-Success;
             padding-bottom: 45px;
             padding-top: 25px;
         }
@@ -143,7 +143,7 @@ export default {
             padding-bottom: 21px;
 
             h4 {
-                color: $mv-Denim;
+                color: $mv-Secondary;
                 padding-top: 31px;
                 padding-bottom: 23px;
             }

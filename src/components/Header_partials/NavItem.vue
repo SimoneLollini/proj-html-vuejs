@@ -19,11 +19,15 @@ export default {
 @use '../../assets/scss/partials/variable.scss' as *;
 
 a {
-  color: $mv-Shark-dark;
+  &:hover {
+    color: $mv-Success;
+  }
+
+  color: $mv-Darker;
   padding-right: 35px;
 }
 
 .active {
-  color: $mv-Lima
+  color: $mv-Success
 }
 </style>

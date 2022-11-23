@@ -63,11 +63,11 @@ export default {
 @use '../../assets/scss/partials/variable.scss' as *;
 
 .footer_main {
-    border-top: 11px solid $mv-Lima;
+    border-top: 11px solid $mv-Success;
 
     a {
         @include mv-a;
-        color: $mv-Shark;
+        color: $mv-Dark;
         display: inline-block;
         padding-bottom: 20px;
     }

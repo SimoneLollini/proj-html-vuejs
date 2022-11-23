@@ -1,32 +1,32 @@
 // Color cube
 $mv-White: #fefefe;
-$mv-Lima: #69bf14;
-$mv-Denim-light: #1975c0;
-$mv-Silver-Chalice: #afaeae;
-$mv-Shark: #262727;
-$mv-Dove-Gray: #6b6b6b;
-$mv-Sunglo: #dd7069;
+$mv-Success: #69bf14;
+$mv-Secondary-light: #1975c0;
+$mv-Silver: #afaeae;
+$mv-Dark: #262727;
+$mv-Dark-Gray: #6b6b6b;
+// $mv-Sunglo: #dd7069;
 
 // Median cut
-$mv-Hippie-Green: #4c8d53;
-$mv-Mercury: #e9e9e9;
-$mv-Barley-Corn: #9ba05a;
-$mv-Beaver: #86695a;
-$mv-Oslo-Gray: #93989b;
+// $mv-Hippie-Green: #4c8d53;
+// $mv-Mercury: #e9e9e9;
+// $mv-Barley-Corn: #9ba05a;
+// $mv-Beaver: #86695a;
+// $mv-Oslo-Gray: #93989b;
 
 // Material design
-$mv-Denim: #1674c3;
-$mv-River-Bed: #4d596a;
-$mv-Lima-light: #6bbb14;
-$mv-Shark-dark: #29262f;
-$mv-Mantis: #8fce53;
+$mv-Secondary: #1674c3;
+// $mv-River-Bed: #4d596a;
+$mv-Success-light: #6bbb14;
+$mv-Darker: #29262f;
+// $mv-Mantis: #8fce53;
 
 
 //Add
 $mv-light: #F2F5F8;
 $mv-Dirty-White: #F7FAFB;
-$mv-Success-light: #81DC28;
-$mv-Lima-dark: #5AA511;
+$mv-Success-lighter: #81DC28;
+$mv-Success-dark: #5AA511;
 
 @mixin mv-p {
     font-size: 13px;
@@ -57,7 +57,7 @@ $mv-Lima-dark: #5AA511;
     text-align: center;
 
     h3 {
-        color: $mv-Lima;
+        color: $mv-Success;
         padding-top: 18px;
         padding-bottom: 36px;
     }

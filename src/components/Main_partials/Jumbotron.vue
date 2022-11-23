@@ -37,14 +37,14 @@ export default {
             padding: 25px 0;
             font-size: 38px;
             font-weight: 900;
-            color: $mv-Shark;
+            color: $mv-Dark;
         }
 
         h6 {
             margin: 0;
             font-size: 11px;
             font-weight: 700;
-            color: $mv-Dove-Gray;
+            color: $mv-Dark-Gray;
         }
     }
 }

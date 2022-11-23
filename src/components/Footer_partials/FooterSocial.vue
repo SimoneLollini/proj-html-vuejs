@@ -24,7 +24,7 @@ export default {
 @use '../../assets/scss/partials/variable.scss' as *;
 
 .footer_social {
-    background-color: $mv-Lima;
+    background-color: $mv-Success;
     padding: 29px;
     color: $mv-White;
     @include mv-a;

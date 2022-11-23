@@ -35,6 +35,6 @@ export default {
 .testimonials_feedback {
     background-color: $mv-Dirty-White;
     @include CallToAction_Quote;
-    color: $mv-Silver-Chalice;
+    color: $mv-Silver;
 }
 </style>

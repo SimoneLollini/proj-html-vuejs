@@ -21,7 +21,7 @@ export default {
 .free_quote {
     text-align: center;
     padding: 16px 0;
-    background-color: $mv-Denim;
+    background-color: $mv-Secondary;
 
     a {
         color: $mv-White;

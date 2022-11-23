@@ -42,8 +42,8 @@ export default {
 
     .wrapper {
         max-width: 448px;
-        background-color: $mv-Lima-light;
-        border: 11px solid $mv-Lima-dark;
+        background-color: $mv-Success-light;
+        border: 11px solid $mv-Success-dark;
         padding: 32px;
         text-align: center;
 
