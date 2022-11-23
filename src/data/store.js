@@ -87,5 +87,27 @@ export const store = reactive({
       text: "Best Moving Tips",
       href: "#"
     },
+  ], customers: [
+    {
+      name: 'John Doe',
+      image: '/images/avada-movers-johndoe-final.jpg',
+    }, {
+      name: 'Jane Doe',
+      image: '/images/avada-movers-janedoe-final.jpg',
+    }, {
+      name: 'John Smith',
+      image: '/images/avada-movers-johnsmith-final.jpg',
+    }
+  ], offers: [
+    {
+      name: 'Two Man Teams',
+      image: '/images/avada-movers-serviceonephoto-final-600x383.jpg',
+    }, {
+      name: 'We Do All The Lifting',
+      image: '/images/avada-movers-servicetwophoto-final-600x383.jpg',
+    }, {
+      name: 'Coast To Coast',
+      image: '/images/avada-movers-servicethreephoto-final-600x383.jpg',
+    },
   ]
 })

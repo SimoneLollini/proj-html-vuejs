@@ -1,7 +1,7 @@
 <script>
 import SingleCol from './SingleCol.vue';
 import PrimaryButton from '../slot_common/PrimaryButton.vue';
-
+import { store } from "../../data/store.js";
 export default {
     name: 'HappyCustomers',
     components: {
@@ -10,18 +10,7 @@ export default {
     },
     data() {
         return {
-            customers: [
-                {
-                    name: 'John Doe',
-                    image: '/images/avada-movers-johndoe-final.jpg',
-                }, {
-                    name: 'Jane Doe',
-                    image: '/images/avada-movers-janedoe-final.jpg',
-                }, {
-                    name: 'John Smith',
-                    image: '/images/avada-movers-johnsmith-final.jpg',
-                }
-            ]
+            store
         }
     }
 
@@ -38,9 +27,8 @@ export default {
 
         <div class="container_lg">
             <div class="row row-cols-3">
-                <!-- <SingleCol :col="customer" v-for="customer in this.customers" /> -->
 
-                <SingleCol :col="customer" v-for="customer in this.customers" />
+                <SingleCol :col="customer" v-for="customer in store.customers" />
 
             </div>
             <!-- /.row -->

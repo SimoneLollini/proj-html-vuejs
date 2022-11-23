@@ -1,7 +1,7 @@
 <script>
 import SingleCol from './SingleCol.vue';
 import PrimaryButton from '../slot_common/PrimaryButton.vue';
-const imgPath = new URL("../../assets/images/avada-movers-janedoe-final.jpg", import.meta.url).href;
+import { store } from "../../data/store.js";
 
 export default {
     name: 'OurOffers',
@@ -11,18 +11,7 @@ export default {
     },
     data() {
         return {
-            offers: [
-                {
-                    name: 'Two Man Teams',
-                    image: '/images/avada-movers-serviceonephoto-final-600x383.jpg',
-                }, {
-                    name: 'We Do All The Lifting',
-                    image: '/images/avada-movers-servicetwophoto-final-600x383.jpg',
-                }, {
-                    name: 'Coast To Coast',
-                    image: '/images/avada-movers-servicethreephoto-final-600x383.jpg',
-                },
-            ]
+            store
         }
     }
 
@@ -38,7 +27,7 @@ export default {
         <div class="container_lg">
             <div class="row row-cols-3">
 
-                <SingleCol :col="offer" v-for="offer in this.offers" />
+                <SingleCol :col="offer" v-for="offer in store.offers" />
 
             </div>
             <!-- /.row -->
