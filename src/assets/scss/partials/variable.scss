@@ -92,6 +92,7 @@ span {
     }
 }
 
-a {
+a,
+img {
     @include hover_scale()
 }

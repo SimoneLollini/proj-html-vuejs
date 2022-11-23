@@ -15,7 +15,7 @@ export default {
                 <a href="#" class="phone">
                     <font-awesome-icon icon="fa-solid fa-phone" />
                 </a>
-                <a href="#">Call us for a free quote</a>
+                <a href="#">Call us for a free quote: 1.800.555.6789</a>
             </div>
 
             <div class="social">
